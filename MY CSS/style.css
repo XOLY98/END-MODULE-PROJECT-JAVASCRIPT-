@@ -48,6 +48,32 @@ body {
   width: 100%;
 }
 section#table-data {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+input.form-control {
+  margin-bottom: 1rem;
+}
+
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: end !important;
+  min-width: 75vw;
+  transform: translateX(400);
+
+}
+
+td {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+th{
+  border: 1px solid black;
+}
+td,th{
+  justify-content: center;
+  text-align: center;
 }
