@@ -5,23 +5,25 @@
   font-family: "poppins", sans-serif;
 }
 
-img {
-  display: block;
-  width: 95px;
-  height: auto;
-}
+
 body {
   height: 100hv;
   background-image: linear-gradient(pink, lightblue);
 
   overflow-x: hidden;
 }
-
+/*BACKGROUND VID & IMG*/
 .backg-video {
   min-width: 100vw;
   height: auto;
   position: absolute;
 }
+img {
+  display: block;
+  width: 95px;
+  height: auto;
+}
+/*NAVBAR*/
 .navbar {
   position: relative;
 }
@@ -31,10 +33,23 @@ body {
   float: right;
   position: relative;
 }
-/* .navbar .btn:hover { */
-/* background-color: deeppink;
-  text-decoration: none; */
-/* } */
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: end !important;
+  min-width: 75vw;
+  transform: translateX(400);
+
+}
+/*CARDS*/
+.card{
+  background-image: linear-gradient(aqua,pink);
+  border: solid pink;
+  border-radius: 7px;
+  
+}
+  
 .row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -64,7 +79,7 @@ input.form-control {
   transform: translateX(400);
 
 }
-
+/*TABLE*/
 td {
   padding: 5px;
   border: 1px solid black;
@@ -76,4 +91,17 @@ th{
 td,th{
   justify-content: center;
   text-align: center;
+}
+.sort{
+  background-color: crimson;
+  border: solid crimson ;
+  border-radius: 5px;
+}
+@media screen and (max-width: 300px) {
+  .container {
+      width: 50vw;
+  }
+  .container img {
+      width: 100%;
+  }
 }
