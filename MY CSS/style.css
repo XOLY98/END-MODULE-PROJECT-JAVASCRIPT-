@@ -23,6 +23,19 @@ img {
   width: 95px;
   height: auto;
 }
+#text{
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  font-size: 3rem;
+  top:20rem;
+  color:white;
+}
+.heading{
+  font-size: 5rem;
+
+}
+
 /*NAVBAR*/
 .navbar {
   position: relative;
